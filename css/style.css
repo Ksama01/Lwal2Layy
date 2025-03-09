@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+:root {
+    --primary-color: #ffba08;
+    --secondary-color: #4ecdc4;
+    --background-color: #292f36;
+    --body-font: "Fjalla One", serif;
+    --title-font: "Oswald", serif;
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    color: white;
+    line-height: 1.6;
+    font-size: 19px;
+    overflow-x: hidden;
+}
+
+.title{
+    font-family: var(--title-font);
+    font-weight: 900;
+}
+
+.btn-custom{
+    font-size:24px;
+    color:var(--background-color);
+    background:var(--primary-color);
+}
+.btn-custom3{
+    font-size:24px;
+    color:var(--primary-color);
+    background: var(--background-color);
+}
+
+.btn-custom:hover{
+    background:var(--secondary-color);
+}
+
+.btn-custom2{
+    font-size:24px;
+    color:var(--background-color);
+    background: #46beb6;
+}
+
+.btn-custom2:hover{
+    background:var(--secondary-color);
+}
+
+/* Header section */
+/* Navbar section */
+
+.top-message {
+    width: 100%;
+    height: 40px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    background-color: var(--secondary-color);
+    color: black;
+    
+    text-align: center;
+    padding: 8px;
+}
+
+.site-logo{
+    width: 5%;
+    min-width: 60px;
+    max-width: 100px;
+    margin-left: 50px;
+}
+
+.navbar {
+    position: fixed;
+    top: 40px; /* Adjusted to avoid overlap with message-bar */
+    left: 0;
+
+    width: 100%;
+    min-height: 60px;
+    background-color: var(--background-color);
+    color: white;
+    
+    text-align: center;
+    border-bottom: 0.1px solid lightgray;
+    padding: 10px 0;
+
+    transition: top 0.5s;
+    z-index: 100;
+}
+
+.nav-link{
+    color: var(--primary-color);
+    font-size: 20px;
+    
+}
+
+.nav-btn, .navbar-toggler{
+    background: var(--primary-color);
+}
+
+.nav-btn:hover{
+    background: var(--secondary-color);
+}
+
+.nav-link:hover, .dropdown-item:hover{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.nav-link:focus, .dropdown-item:focus{ 
+    color: var(--secondary-color);
+}
+
+/* End Navbar section */
+
+/* Start Banner section */
+
+
+
+
+.banner-section{
+    width: 100vw;
+    background-image: url("../images/building2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-section a:hover{
+    color: white;
+}
+
+.banner-section a:active{
+    color: white;
+    
+}
+h1{
+    text-align: justify;
+}
+
+.banners{
+    width: 50%;
+    height: 100vh;
+    
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+}
+
+.banners .content{
+    margin-top: 70px ;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* End Banner section */
+
+
+/* Start Menu section  */
+.menu-item{
+    
+    height: 120px;
+
+    border-left: 1px solid rgb(87, 86, 86);
+    padding: 20px;
+}
+
+.menu-item a{
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+
+    transition: all 0.1s;
+}
+
+.menu-item a:hover{
+    color: var(--secondary-color);
+    transform: scale(1.2);
+}
+
+.menu-item:first-child{
+    border-left: none;
+}
+
+.menu-item i{
+    font-size: 48px;
+    margin-bottom: 6px;
+}
+/* End Menu section  */
+
+/* start carousel section  */
+.carousel-wrapper {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.main-image {
+    /* height: 400px; */
+    width: 80%;	
+    object-fit: cover;
+   
+}
+.carousel-container {
+    display: flex;
+    align-items: center;
+}
+.thumbnail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-height: 400px;
+    overflow-y: hidden;
+    position: relative;
+}
+.thumbnail-container img {
+    height: 80px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.thumbnail-container img.active {
+    opacity: 1;
+    border: 2px solid #007bff;
+}
+.carousel-controls {
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    user-select: none;
+}
+/* end carousel section  */
+
+
+/* start hiring section  */
+/* .hiring-section{
+    height: 100px;
+    color: var(--background-color);
+    background: url("../images/hiring-section-bg.png") no-repeat center/cover;
+
+}
+
+.hiring-section .btn-custom:hover{
+    background-color: #ffa008;
+} */
+/* end hiring section  */
+
+
+/* start reward section */
+.reward-section{
+    height: 600px;
+    color: white;
+    background: var(--primary-color);
+    background-image: url("../images/rwbg.jpg");
+    background-position: 52% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* end reward section */
+
+
+/* Start Inside 7 Eleven Carousel section */
+.carousel-container-swipper {
+    width: 100%;
+    margin: auto;
+    position: relative;
+        }
+        
+.swiper {
+    width: 100%;
+    padding: 20px;
+}
+
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* Each card takes 50% of the screen */
+}
+
+.cards{
+    width: 540px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.cards .card-content{
+    height: 100%;
+}
+
+
+.img-container a{
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    transition: transform .2s;
+}
+
+.img-container a:hover{
+    transform: scale(1.2);
+}
+
+.cards img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cards a{
+    color: black;
+    font-size: 18px;
+}
+.cards a:hover{
+    color: var(--primary-color);
+}
+
+/* Customizing Pagination Dots */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    right: 20px; /* Move to the right */
+    width: auto !important;
+    display: flex;
+    justify-content: end;
+}
+
+.swiper-pagination-bullet {
+    background-color: lightblue;
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
+    margin: 0 5px;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #007bff;
+}
+        
+/* End Inside 7 Eleven Carousel section */
+
+/* strat get connected section */
+.getConnected-section{
+    background: var(--primary-color);
+    color: var(--background-color);
+}
+
+.getConnected-section .card-container{
+    overflow: hidden;
+}
+
+.getConnected-section .card{
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.getConnected-section .card:hover{
+    transform: scale(1.2);
+}
+/* end get connected section */
+
+/* Start Footer Section */
+.first-footer{
+    border-bottom: 1px solid gray;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-list{
+    list-style: none;
+}
+
+.footer-list a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-list a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-icon{
+    width: 30px;
+    height: 30px;
+
+    font-size: 18px;
+    margin-left: 10px;
+
+    text-align: center;
+    line-height: 30px;
+
+    color: black;
+    background-color: white;
+
+    border-radius: 50%;
+}
+
+.footer-links{
+    color: grey;
+    line-height: 180%;
+    margin-bottom: 15px;
+}
+
+.footer-links a{
+    color: lightgrey;
+    text-decoration: none;
+}
+.footer-links a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.copyright-description{
+    color: grey;
+    font-size: 12px;
+}
+/* End Footer Section */
+
+/* Start Feedback Modal Section */
+/* Sticky Button Styles */
+.feedback-btn-container {
+    position: fixed;
+    right: -43px;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.feedback-btn-container button{
+    font-size: 20px;
+    font-family: var(--title-font);
+
+    background: var(--background-color);
+
+    border: none;
+}
+
+.feedback-btn-container button:hover{
+    background: var(--primary-color);
+}
+
+/* Close "X" mark */
+.close-btn {
+    font-size: 20px;
+    border-left: 1px solid lightcyan;
+    padding: 0 5px;
+}
+/* End Feedback Modal Section */
+
+@media (max-width: 768px) {
+    .promotion-section {
+        background: url("../images/promotion_bg.png") no-repeat center/cover;
+        background-position: 30% 50%;
+        position: relative;
+    }
+
+    .promotion-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(143, 142, 142, 0.6), rgba(64, 64, 64, 0.6));
+        z-index: -1;
+    }
+
+    .carousel-container{
+        background: linear-gradient(to bottom, rgba(67, 67, 67, 0.6), rgba(29, 29, 29, 0.6));
+    }
+
+    .reward-content{
+        color: white;
+        background: linear-gradient(to bottom, rgba(143, 129, 129, 0.283), rgba(36, 36, 36, 0.73));
+        height: 97%;
+        margin: auto
+    }
+
+    .cards{
+        width: 540px;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .cards .img-container{
+        height: 60%;
+    }
+
+    .getConnected-section .card-container{
+       margin-bottom: 2px;
+
+    }
+}
+
+
+/* for js animation */
+.sticky {
+    top: 0;
+}
+
+.box-shadow{
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.map-container {
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 50px;
+    overflow: hidden;
+    margin-left: 90px;
+}
+
+.footer-text {
+    margin-left: 10px;
+    
+}
+
+.footer-text .title {
+    margin-bottom: 15px;
+}
+
+.footer-text p {
+    margin-bottom: 10px;
+}
